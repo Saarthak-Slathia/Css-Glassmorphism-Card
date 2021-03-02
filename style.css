@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all .3s ease-in-out;
+    font-family: Arial;
+}
+
+.title h2{
+    position: absolute;
+    margin: 150px 100px;
+    text-shadow: 2px 2px 2px rgb(187, 255, 0);
+    color: rgb(238, 255, 0);
+    margin-right: 0px;
+    border-bottom: 2px solid red;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.title h2::before{
+    border-bottom: 2px solid red;
+}
+
+body{
+    background: linear-gradient(60deg, yellow, cyan);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: -5px -5px 5px #ffffff70, 5px 5px 5px #00000070;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    max-width: 290px;
+    background: url("cheese.png") no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.card:hover .content, 
+.card:hover .title h2{
+    margin-top: 210px;
+}
+
+.card:hover{
+    transition-delay: 0.5s;
+    margin-top: -1rem;
+    box-shadow: -10px -10px 10px #ffffff70, 15px 15px 10px #00000070;
+}
+
+.content{
+    padding: 30px 20px;
+    bottom: 0;
+    margin-top: 410px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+.card .content h2{
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.content p{
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.content small{
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    float: right;
+    color: #fff;
+}
