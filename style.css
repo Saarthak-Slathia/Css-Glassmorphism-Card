@@ -7,19 +7,16 @@
 }
 
 .title h2{
-    position: absolute;
-    margin: 150px 100px;
+    text-align: center;
     text-shadow: 2px 2px 2px rgb(187, 255, 0);
     color: rgb(238, 255, 0);
-    margin-right: 0px;
-    border-bottom: 2px solid red;
-    border-radius: 25px;
     cursor: pointer;
     padding: 0.5rem;
 }
 
 .title h2::before{
-    border-bottom: 2px solid red;
+    content: "⭐";
+    position: absolute;
 }
 
 body{
